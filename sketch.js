@@ -71,6 +71,8 @@ function setup() {
 function draw() {
   //trex.debug = true;
   background(255);
+  camera.position.x = width/2;
+  camera.position.y=trex.y
   text("Score: "+ score, 500,50);
   
   if (gameState===PLAY){
