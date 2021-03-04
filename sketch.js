@@ -15,7 +15,7 @@ var gameOver, restart;
 localStorage["HighestScore"] = 0;
 
 function preload(){
-  trex_running =   loadImage("sonicbgremoved.png);
+  trex_running =   loadImage("sonicbgremoved.png");
   trex_collided = loadAnimation("trex_collided.png");
   
   groundImage = loadImage("ground2.png");
