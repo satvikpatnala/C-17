@@ -15,7 +15,7 @@ var gameOver, restart;
 localStorage["HighestScore"] = 0;
 
 function preload(){
-  trex_running =   loadAnimation("trex1.png","trex3.png","trex4.png");
+  trex_running =   loadImage("sonicbgremoved.png);
   trex_collided = loadAnimation("trex_collided.png");
   
   groundImage = loadImage("ground2.png");
@@ -38,7 +38,7 @@ function setup() {
   
   trex = createSprite(50,180,20,50);
   
-  trex.addAnimation("running", trex_running);
+  trex.addImage(trex_running);
   trex.addAnimation("collided", trex_collided);
   trex.scale = 0.5;
   
